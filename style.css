@@ -1,0 +1,151 @@
+:root {
+  /*Colors*/
+  --White: hsl(0, 0%, 100%);
+
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+
+  --Brown-800: hsl(14, 45%, 36%);
+
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+
+  /*Font Size*/
+  --font-size: 16px;
+  /*font Weight*/
+
+  --font-weight-400: 400;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--White);
+  padding: 2em 0em 0em 1em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2em;
+  text-wrap: wrap;
+}
+.header img {
+  border-radius: 1em;
+}
+.header h1 {
+  font-weight: var(--font-weight-700);
+  font-size: 50px;
+  margin-left: 0.5em;
+}
+.header p {
+  margin-left: 2em;
+}
+.header-text {
+  margin-bottom: 3em;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2.5em;
+  background-color: var(--Rose-50);
+  border-radius: 1em;
+}
+.main h2 {
+  color: var(--Rose-800);
+}
+.main ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  color: var(--Rose-800);
+  margin-left: 2em;
+}
+.main ul,
+li,
+p {
+  color: #000;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 2.5em;
+  border-bottom: 1px solid black;
+}
+.content h2 {
+  color: var(--Brown-800);
+}
+.content ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  color: var(--Rose-800);
+
+  margin-left: 2em;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 4em;
+  border-bottom: 1px solid black;
+}
+.body h2 {
+  color: var(--Brown-800);
+}
+.body ol {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-left: 2em;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 2em;
+}
+.bottom h2 {
+  color: var(--Brown-800);
+}
+
+.bottom .table {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2em;
+  margin-left: 2em;
+}
+
+.table .row-1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2em;
+  border-bottom: 1px solid var(--Stone-150);
+  font-weight: var(--font-weight-400);
+}
+.row-1 .second-text {
+  color: var(--Brown-800);
+  font-weight: var(--font-weight-700);
+  margin-right: 30em;
+}
